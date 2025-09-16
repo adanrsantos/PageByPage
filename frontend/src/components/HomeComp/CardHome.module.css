@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    border: solid 2px gray;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    position: relative;
+}
+
+.card:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 10px 10px 15px;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.imgCont {
+    display: flex;
+    width: 10%;
+    margin-right: 30px;
+}
+
+.img {
+    height: 100px;
+    border-radius: 5px;
+}
+
+.img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.titleCont {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-right: 30px;
+}
+
+.usernameCont {
+    display: flex;
+}
+
+.title {
+    font-size: 1.2em;
+}
+
+.username {
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.infoCont {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    margin-right: 30px;
+}
+
+.author {
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+.rating {
+    font-size: 0.9em;
+    color: #ffa726;
+}
+
+.priceCont {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+
+.type {
+    color: blue;
+}
+
+.price {
+    font-size: 1.2em;
+    color: black;
+}
+
+.quantityCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    margin-right: 30px;
+}
+
+.quantityBorder {
+    display: flex;
+    border: solid;
+    border-radius: 10px;
+    background-color: white;
+    padding: 2px;
+}
+
+.input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input {
+    display: flex;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    text-align: center;
+    width: 40px !important;
+    border: none;
+}
+
+.quantity {
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+}
+
+.increase {
+    background-color: lightblue;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.decrease {
+    background-color: rgb(255, 125, 125);
+    border-radius: 5px;
+}
+
+.btnCont {
+    display: flex;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    color: black;
+    font-weight: 1000;
+    background-color: lightblue;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.btn:hover,
+.img:hover,
+.increase:hover,
+.decrease:hover,
+.title:hover,
+.author:hover,
+.rating:hover,
+.type:hover,
+.price:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
+}
